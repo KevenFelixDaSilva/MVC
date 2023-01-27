@@ -6,13 +6,13 @@ using System.Data.SqlClient;
 
 namespace dev_Junior.Data
 {
-    public class ConecxaoSql
+    public class SqlConnection
     {
         public void conecxaoSql(string[] args)
         {
             string connectionString = $"Data Source=DESKTOP-M3OQ381;Initial Catalog=keven;Integrated Security=True;";
          
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (System.Data.SqlClient.SqlConnection conn = new System.Data.SqlClient.SqlConnection(connectionString))
             {
                 conn.Open();
 
