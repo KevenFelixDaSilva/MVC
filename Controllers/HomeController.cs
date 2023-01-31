@@ -20,6 +20,7 @@ namespace dev_Junior.Controllers
 
         public IActionResult Index()
         {
+            
             return View();
         }
 
@@ -28,7 +29,11 @@ namespace dev_Junior.Controllers
             return View();
         }
 
-        public IActionResult Cadastro()
+        public IActionResult Sobre()
+        {
+            return View();
+        }
+        public IActionResult test()
         {
             return View();
         }
